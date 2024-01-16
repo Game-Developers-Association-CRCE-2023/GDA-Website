@@ -1,0 +1,225 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(19, 19, 19);
+  }
+  
+  a {
+    color: #983fff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #983fff;
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  /*--------------------------------------------------------------
+  # Preloader
+  --------------------------------------------------------------*/
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #983fff;
+    border-top-color: #d2f9eb;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+  }
+  
+  @-webkit-keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Back to top button
+  --------------------------------------------------------------*/
+  .back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #983fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+  }
+  
+  .back-to-top i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+  }
+  
+  .back-to-top:hover {
+    background: #983fff;
+    color: #fff;
+  }
+  
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /*--------------------------------------------------------------
+  # Disable AOS delay on mobile
+  --------------------------------------------------------------*/
+  @media screen and (max-width: 768px) {
+    [data-aos-delay] {
+      transition-delay: 0 !important;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  
+  
+  
+
+    .alumni {
+      background: grey;
+    }
+    
+    .alumni .member {
+      position: relative;
+      box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);
+      padding: 10px;
+      border-radius: 5px;
+      width: 100%; /* Adjust as needed */
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      border: 2.6px solid darkgray;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .alumni .member .pic {
+      overflow: hidden;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+    }
+    
+    .alumni .member .pic img {
+      transition: ease-in-out 0.5s;
+    }
+    
+    .alumni .member:hover img {
+      transform: scale(1.2);
+    }
+    
+    .alumni .member .member-info {
+      padding-left: 30px;
+      color: #983fff;
+      
+    }
+    
+    .alumni .member h4 {
+      font-weight: 700;
+      margin-bottom: 5px;
+      font-size: 20px;
+      color: #2c4964;
+    }
+    
+    .alumni .member span {
+      display: block;
+      font-size: 15px;
+      padding-bottom: 10px;
+      position: relative;
+      font-weight: 500;
+      color: #2c4964;
+    }
+    
+    .alumni .member span::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 1px;
+      background: #b2c8dd;
+      bottom: 0;
+      left: 0;
+    }
+    
+    .alumni .member p {
+      margin: 10px 0 0 0;
+      font-size: 14px;
+    }
+    
+    .alumni .member .social {
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    
+    .alumni .member .social a {
+      transition: ease-in-out 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50px;
+      width: 32px;
+      height: 32px;
+      background-color: #983fff;
+      text-decoration: none;
+    }
+    
+    .alumni .member .social a i {
+      color: #fff;
+      font-size: 16px;
+      margin: 0 2px;
+    }
+    
+    .alumni .member .social a:hover {
+      background: #3fbbc0;
+    }
+    
+    .alumni .member .social a + a {
+      margin-left: 8px;
+    }
+    
+                        
