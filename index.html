@@ -10,7 +10,12 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/logo/favicon.png" rel="icon">
+  <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logo/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/logo/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/img/logo/android-chrome-512x512.png">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,7 +76,10 @@
   <nav class="navbar navbar-expand-lg bg" style="background-color: rgb(12, 12, 12);">
     <div class="container-fluid" style="background-color: rgb(12, 12, 12);">
       <div class="logo" id="logo">
-        <h1><a href="index.html"><span style="font-size: xx-large; ">GDA</span></a></h1>
+        <h1><a href="index.html" class="d-flex align-items-center" style="text-decoration: none; gap: 10px;">
+            <img src="assets/img/logo/logo.png" alt="GDA Logo"
+              style="height: 40px; width: auto; object-fit: contain;">
+          </a></h1>
       </div>
       <!-- <h1><a class="navbar-brand" href="index.html">GDA</a></h1> -->
       <button class="navbar-toggler" style="background-color: rgb(224, 210, 236); " type="button"
@@ -283,14 +291,21 @@
               style="height: 600px; object-fit: contain;background-color: black;">
           </div>
           <div class="col-lg-6 col-md-12 mb-4 text-center">
-            <img src="assets/img/team/2025-26/team_photo.jpeg" class="img-fluid rounded shadow w-100" alt="Team Photo"
-              style="height: 600px; object-fit: cover;">
+            <img src="assets/img/team/2025-26/team.jpeg" class="img-fluid rounded shadow w-100" alt="Team Photo"
+              style="height: 600px; object-fit: contain;background-color: black;">
           </div>
           <div class="col-lg-3 col-md-12 mb-4 text-center">
             <img src="assets/img/team/2025-26/junior.jpeg" class="img-fluid rounded shadow w-100" alt="Junior Team"
               style="height: 600px; object-fit: contain;background-color: black;">
           </div>
         </div>
+
+        <!-- <div class="row">
+          <div class="col-12 text-center mt-4" data-aos="fade-up">
+            <a href="team.html" class="btn px-5 py-2" style="border-color: #7d3ff0; color: #7d3ff0;">View Current
+              Team</a>
+          </div>
+        </div> -->
 
       </div>
     </section>
