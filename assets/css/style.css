@@ -164,20 +164,21 @@ h6 {
 
 #header.header-scrolled {
   background: rgba(0, 0, 0, 0.91);
-    height: 60px;
+  height: 60px;
 }
 
-#head a:hover{
+#head a:hover {
   color: #7a2bc4;
   text-decoration: none;
 }
 
-#logo h1 a:hover{
+#logo h1 a:hover {
   color: #7a2bc4;
   text-decoration: none;
 
 }
-#logo h1 a{
+
+#logo h1 a {
   color: #e9e6ec;
   text-decoration: none;
   margin-right: 50%;
@@ -506,11 +507,11 @@ h6 {
   letter-spacing: 1px;
   display: inline-block;
   position: relative;
-  margin-right:75% ;
+  margin-right: 75%;
   width: 40%;
   padding: 10px 30px;
   border-radius: 50px;
-  
+
   transition: 0.5s;
   color: #fff;
   background: #983fff;
@@ -551,8 +552,8 @@ h6 {
 
   #hero h1 {
     font-size: 28px;
-    line-height: 32px;
-    margin-bottom: 10px;
+    line-height: 40px;
+    margin-bottom: 20px;
   }
 
   #hero h2 {
@@ -978,16 +979,18 @@ section {
   bottom: 0;
   background: rgba(20, 20, 20, 0.842);
 }
+
 .details .content+.content {
   margin-top: 100px;
 }
 
 .details .content h3 {
-  
+
   font-weight: 600;
   font-size: 28px;
   color: #925afa;
 }
+
 .details .content p {
   font-weight: 400;
   font-size: 18px;
@@ -1012,8 +1015,9 @@ section {
 .details .content p:last-child {
   margin-bottom: 0;
 }
-.details .content img{
-  height:110%;
+
+.details .content img {
+  height: 110%;
   width: 100%;
 }
 
@@ -1026,14 +1030,14 @@ section {
   display: inline-block;
   padding: 10px 30px;
   position: relative;
-  margin-right:100% ;
+  margin-right: 100%;
   margin-top: 5%;
   width: 40%;
   border-radius: 50px;
   transition: 0.5s;
   color: #fff;
   background: #983fff;
- 
+
 }
 
 #events .btn-get-started:hover {
@@ -1485,6 +1489,7 @@ section {
   margin-bottom: 5px;
   color: #010483;
 }
+
 .contact .info a {
   text-decoration: none;
   padding: 15px 0 0 15px;
@@ -1671,7 +1676,7 @@ section {
   font-family: "Montserrat", sans-serif;
 }
 
-#footer .footer-top .footer-info img{
+#footer .footer-top .footer-info img {
   border-radius: 50%;
   line-height: 24px;
   margin-bottom: 0;
@@ -1744,7 +1749,7 @@ section {
 }
 
 #footer .footer-top .footer-newsletter img {
-  margin:auto;
+  margin: auto;
   width: 100%;
   height: 100%;
   display: flex;
@@ -1763,71 +1768,80 @@ section {
 /* ---------------------------------- */
 
 .slider {
-        width: 650px;
-        text-align: center;
-        overflow: hidden;
-      }
+  width: 650px;
+  text-align: center;
+  overflow: hidden;
+}
+
 .slides {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        -webkit-overflow-scrolling: touch;
-      }
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
 .slides::-webkit-scrollbar {
-        width: 10px;
-        height: 10px;
-      }
+  width: 10px;
+  height: 10px;
+}
+
 .slides::-webkit-scrollbar-thumb {
-        background: #666;
-        border-radius: 10px;
-      }
+  background: #666;
+  border-radius: 10px;
+}
+
 .slides::-webkit-scrollbar-track {
-        background: transparent;
-      }
-.slides > div {
-        scroll-snap-align: start;
-        flex-shrink: 0;
-        width: 350px;
-        height: 300px;
-        margin-right: 50px;
-        border-radius: 10px;
-        background: #eee;
-        transform-origin: center center;
-        transform: scale(1);
-        transition: transform 0.5s;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 100px; 
-      }
-.slider > a {
-        display: inline-flex;
-        width: 1.5rem;
-        height: 1.5rem;
-        background: white;
-        text-decoration: none;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        margin: 0 0 0.5rem 0;
-        position: relative;
-      }
-.slider > a:active {
-        top: 1px;
-        color: #1c87c9;
-      }
-.slider > a:focus {
-        background: #eee;
-      }
-      /* Don't need button navigation */
-      @supports (scroll-snap-type) {
-        .slider > a {
-          display: none;
-        }
-      }
-    
+  background: transparent;
+}
+
+.slides>div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 350px;
+  height: 300px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: #eee;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+.slider>a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+
+.slider>a:active {
+  top: 1px;
+  color: #1c87c9;
+}
+
+.slider>a:focus {
+  background: #eee;
+}
+
+/* Don't need button navigation */
+@supports (scroll-snap-type) {
+  .slider>a {
+    display: none;
+  }
+}
+
 
 /* ------------------------------------------------- */
 
