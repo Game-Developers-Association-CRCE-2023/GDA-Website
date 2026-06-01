@@ -345,6 +345,83 @@ h6 {
 /**
 * Mobile Navigation 
 */
+
+.magazine {
+  background: rgba(116, 96, 243, 0.05);
+}
+
+.magazine-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.magazine-cover:hover {
+  box-shadow: 0 12px 30px rgba(28, 31, 97, 0.2) !important;
+}
+
+.magazine-cover {
+  position: relative;
+  width: 100%;
+  background: #f8f9ff;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 9 / 12;
+  cursor: pointer;
+}
+
+.magazine-cover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(116, 96, 243, 0.14), rgba(255, 255, 255, 0.75)),
+    repeating-linear-gradient(90deg, rgba(116, 96, 243, 0.08) 0 1px, transparent 1px 18px);
+}
+
+.magazine-cover img {
+  position: relative;
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+.magazine-cover img.is-loaded {
+  opacity: 1;
+}
+
+.magazine-card-link:hover .magazine-cover img {
+  transform: scale(1.02);
+}
+
+.magazine-info {
+  padding: 0 0.5rem;
+}
+
+.magazine-info h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+  color: #0f0f0f;
+  font-weight: 600;
+}
+
+.magazine-info p {
+  color: #6c757d;
+}
+
+@media (max-width: 991px) {
+  .magazine-cover {
+    min-height: 280px;
+  }
+
+  .magazine-card-link:active .magazine-cover img {
+    opacity: 0.62;
+  }
+}
 .mobile-nav-toggle {
   color: #fff;
   font-size: 28px;

@@ -176,6 +176,33 @@
   });
 
   /**
+   * Lazy load heavy magazine covers and keep PDFs unfetched until click.
+   */
+  const lazyMedia = select('.js-lazy-media[data-src]', true);
+  const loadLazyMedia = (media) => {
+    if (!media || !media.dataset.src) return;
+    media.src = media.dataset.src;
+    media.removeAttribute('data-src');
+    media.classList.add('is-loaded');
+  };
+
+  if ('IntersectionObserver' in window) {
+    const lazyMediaObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        loadLazyMedia(entry.target);
+        observer.unobserve(entry.target);
+      });
+    }, {
+      rootMargin: '200px 0px'
+    });
+
+    lazyMedia.forEach(media => lazyMediaObserver.observe(media));
+  } else {
+    lazyMedia.forEach(loadLazyMedia);
+  }
+
+  /**
    * Initiate gallery lightbox 
    */
   const galleryLightbox = GLightbox({
